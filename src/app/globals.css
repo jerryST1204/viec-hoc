@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f7fc;
+  --foreground: #1e2430;
+  --primary: #3a63de;
+  --secondary: #259d63;
+  --tertiary: #e0533c;
+  --muted: #737d91;
+  --line: #e7eaf1;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --font-sans: var(--font-vietnam);
+}
+
+body {
+  min-height: 100%;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-vietnam), sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
